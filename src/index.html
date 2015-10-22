@@ -12,6 +12,7 @@
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <style>
@@ -37,79 +38,55 @@
         <!-- End Preloader -->
 
         <header class="navbar">
-        <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <h1>
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>    
-                </h1>          
+            <div class="container">
+                <div class="wrap-header">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1>
+                            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>    
+                        </h1>          
+                    </div>
+                    <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
             
         </header>
     
         <main>
             <section class="top" id="top">
-                <div class="container">
-                    <div class="row">
- 
-                    <div id="slider-top" class="carousel slide" data-ride="carousel">
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                          
-                         <div class="carousel-caption">
-                            <h2>First slide title</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex, nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis convallis non sed quam. </p>
-                             <a class="button" href="#">more info</a>
-                          </div>
+                <div id="slider-top" class="owl-carousel">
+                    <div class="item" style="background-image: url(img/top_bg.jpg);">
+                        <div class="container">
+                            <div class="caption">
+                                        <h2>First slide title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex, nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis convallis non sed quam.</p>
+                                        <a href="#" class="button">more info</a>
+                            </div>
                         </div>
-                          <div class="item">
-                          
-                         <div class="carousel-caption">
-                            <h2>First slide title</h2>
-                            <p>nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex,  convallis non sed quam. </p>
-                             <a class="button" href="#">more info</a>
-                          </div>
-                        </div>
-                          <div class="item">
-                          
-                         <div class="carousel-caption">
-                            <h2>First slide title</h2>
-                            <p>Suspendisse consequat massa ex, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex, nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis convallis non sed quam. </p>
-                             <a class="button" href="#">more info</a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Controls -->
-                      <a class="left carousel-control" href="#slider-top" role="button" data-slide="prev">
-                        
-                      </a>
-                      <a class="right carousel-control" href="#slider-top" role="button" data-slide="next">
-                        
-                      </a>
-                    </div>                        
-
                     </div>
-                </div>     
+                    <div class="item" style="background-image: url(img/top_bg.jpg);">
+                        <div class="container">
+                            <div class="caption">
+                                        <h2>Second slide title</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex, nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis convallis non sed quam.</p>
+                                        <a href="#" class="button">more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="about" class="about wow fadeInDown" data-wow-delay="0.3s">
                 <div class="container">
@@ -366,18 +343,44 @@ Nulla at tempus tellus. Nunc nec molestie ex. Vivamus at gravida sem.</p>
                     </div>
                     <div class="row">
                         <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
-                            <div id="carousel-example-generic" class="carousel slide testimontials_slider" data-ride="carousel">
-                                  <!-- Indicators -->
-<!--
-                                  <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                  </ol>
--->
+                            <div id="slider-testimonials" class="owl-carousel">
+                                <div class="item">
+                                      <div class="carousel-caption">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex, nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis convallis non sed quam. Nullam vehicula nunc quis ullamcorper malesuada. Nunc vitae sodales nisl, eget posuere ante. 
+Sed ut dui vitae diam tempor suscipit. Quisque vel erat eu nisl scelerisque lobortis. Nunc convallis leo id volutpat cursus. Proin diam orci, pretium eu sollicitudin non, ultrices vitae ante. Duis tristique at magna a convallis.  
+                                        </p>  
+                                      </div>
+                                      <div class="person">
+                                        <div class="left">
+                                            <img src="img/person.png" alt="">   
+                                        </div>      
+                                          <div class="right">
+                                            <p>John Dove </p>
+                                              <p>from company </p>
+                                          </div>
+                                      </div>
+                                    </div>
+                                <div class="item">
+                                      <div class="carousel-caption">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat massa ex, nec vestibulum neque tincidunt interdum. Nam et ex sit amet purus mollis convallis non sed quam. Nullam vehicula nunc quis ullamcorper malesuada. Nunc vitae sodales nisl, eget posuere ante. 
+Sed ut dui vitae diam tempor suscipit. Quisque vel erat eu nisl scelerisque lobortis. Nunc convallis leo id volutpat cursus. Proin diam orci, pretium eu sollicitudin non, ultrices vitae ante. Duis tristique at magna a convallis.  
+                                        </p>  
+                                      </div>
+                                      <div class="person">
+                                        <div class="left">
+                                            <img src="img/person.png" alt="">   
+                                        </div>      
+                                          <div class="right">
+                                            <p>John Dove </p>
+                                              <p>from company </p>
+                                          </div>
+                                      </div>
+                                    </div>
                                
+                            </div>
+<!--
+                            <div id="carousel-example-generic" class="carousel slide testimontials_slider" data-ride="carousel">
 
-                                  <!-- Wrapper for slides -->
                                   <div class="carousel-inner" role="listbox">
                                     <div class="item active">
                                       <div class="carousel-caption">
@@ -417,19 +420,8 @@ Sed ut dui vitae diam tempor suscipit. Quisque vel erat eu nisl scelerisque lobo
 
 
                                   </div>
-                                
-                                  <!-- Controls -->
-<!--
-                                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-
-                                  </a>
-                                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-
-                                  </a>
--->
-                                
-                                
                                 </div>    
+-->
                         </div>
                     </div>
                 </div>
@@ -544,11 +536,11 @@ Sed ut dui vitae diam tempor suscipit. Quisque vel erat eu nisl scelerisque lobo
         
         
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 
 
         <script src="js/plugins.js"></script>
