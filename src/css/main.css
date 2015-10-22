@@ -373,7 +373,7 @@ footer .copyright {
   height: 800px;
 }
 #top #slider-top .owl-item .caption {
-  padding-top: 40%;
+  padding-top: 30%;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -979,6 +979,13 @@ footer .copyright {
   .one-of-four {
     width: 100%;
   }
+  header.navbar .wrap-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .caption {
+    padding-top: 200px !important;
+  }
 }
 .container-full {
   width: 100%;
@@ -989,7 +996,7 @@ html {
   font-size: 10px;
   font-weight: 300;
   font-style: normal;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #56553f;
 }
 body {
