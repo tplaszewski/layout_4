@@ -1,0 +1,73 @@
+/* gallery */
+.gallery{
+    .container{
+        background-color: white;
+    }
+    h3{
+        
+    }
+}
+.fancybox-skin{
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none !important;
+}
+.gallery-box {
+	overflow: hidden;
+    position: relative;
+    transition: all .2s ease-in-out;
+    img{  
+        display: block;
+        max-width: 100%;
+    }
+    &:hover{
+        //transform: scale(1.1);
+        
+        z-index: 999999;
+    }
+}
+
+.no-touch  .gallery-box:hover img,
+ .gallery-box.cs-hover img {
+	//transform: translateY(-50px);
+}
+ .gallery_description {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+	top: auto;
+    bottom: 0;
+    opacity: 1;
+	transform: translateY(100%);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+    //background-color: @black;
+     padding: 20px 10px;
+     color: @white;
+     background-color: #4cc85e;
+     padding: 20px;
+     h4{
+         text-align: center;
+         font-size: 1.4rem;
+         font-weight: 700;
+         text-transform: uppercase;
+         position: relative;
+         top: 65%;
+     }
+     &::before{
+         content: "";
+         background-image: url(../img/ico_gallery_hover.png);
+         height: 45px;
+         width: 45px;
+         display: block;
+         margin: 0 auto;
+         position: relative;
+         top:50%;
+         transform: translateY(-50%);
+     }
+}
+.no-touch  .gallery-box:hover .gallery_description,
+ .gallery-box.cs-hover .gallery_description {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}

@@ -1,0 +1,110 @@
+@import "../css/bootstrap.min.css";
+@import "../css/bootstrap-theme.min.css";
+@import "../css/libs/animate.css";
+@import "../css/jquery.fancybox.css";
+@import "reset";
+@import "typo";
+@import "vars";
+@import "utility";
+
+@import "header";
+@import "content";
+@import "footer";
+
+
+/* blocks */
+@import "top";
+@import "about";
+@import "quote";
+@import "features";
+@import "gallery";
+@import "counter";
+@import "testimonials";
+@import "contact";
+
+@import "responsive";
+
+.container-full{
+    width: 100%;
+}
+body, html{
+    font-size: 10px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: @font1;
+    color: @mainColor;
+}
+body{
+    right: 0;
+    margin: 0;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#0c0c0c; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+@boxSize: 15;
+@color: #dfdfdf;
+@color2: #4f4d49;
+
+#status {
+  position: absolute;
+  margin: auto;
+  left: 0; 
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+  width: @boxSize * 1px;
+  height: @boxSize * 1px;
+  box-shadow: 
+    @boxSize*1px  @boxSize*1px @color2,
+    @boxSize*-1px  @boxSize*1px @color,
+    @boxSize*-1px  @boxSize*-1px @color2,
+    @boxSize*1px  @boxSize*-1px @color;
+  -webkit-animation: spin ease infinite 4s;
+}
+
+@-webkit-keyframes spin {
+  0%, 100% {
+      box-shadow: 
+      @boxSize*1px  @boxSize*1px @color2,
+      @boxSize*-1px  @boxSize*1px @color,
+      @boxSize*-1px  @boxSize*-1px @color2,
+      @boxSize*1px  @boxSize*-1px @color;
+  }
+  
+  25% {
+      box-shadow: 
+      @boxSize*-1px  @boxSize*1px @color,
+      @boxSize*-1px  @boxSize*-1px @color2,
+      @boxSize*1px  @boxSize*-1px @color,
+      @boxSize*1px  @boxSize*1px @color2;
+  }
+  
+  50% {
+      box-shadow: 
+      @boxSize*-1px  @boxSize*-1px @color2,
+      @boxSize*1px  @boxSize*-1px @color,
+      @boxSize*1px  @boxSize*1px @color2,
+      @boxSize*-1px  @boxSize*1px @color;
+  }
+  
+  75% {
+      box-shadow: 
+      @boxSize*1px  @boxSize*-1px @color,
+      @boxSize*1px  @boxSize*1px @color2,
+      @boxSize*-1px  @boxSize*1px @color,
+      @boxSize*-1px  @boxSize*-1px @color2;
+  }
+}

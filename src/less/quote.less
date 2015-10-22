@@ -1,0 +1,43 @@
+.quote{
+    background-image: url(../img/quote_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.8rem;
+    line-height: 4.8rem;
+    padding-top: 200px;
+    padding-bottom: 290px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+    .content{
+        margin: 0 auto;
+        position: relative;
+        width: 70%;
+        h5{
+            font-size: 4.4rem;
+            position: relative;
+            padding-bottom: 20px;
+            font-style: normal;
+            &::after{
+                background-color: white;
+                bottom: 0;
+                content: "";
+                display: inline-block;
+                height: 4px;
+                margin: 0 -45px 0 auto;
+                position: absolute;
+                right: 50%;
+                text-align: center;
+                width: 90px;
+            }
+        }
+        p{
+            font-size: 2.2rem;
+            margin-top: 70px;
+        }
+        
+    }
+}
